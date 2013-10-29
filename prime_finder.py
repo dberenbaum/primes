@@ -12,7 +12,7 @@ def prime_finder(n):
 		
     #Make initial list of possible divisors from 2 to the square root of n
     #Note that a number greater than the square root of n must be multiplied by a number less than the square root of n to get the product n
-	max_divisor = floor(sqrt(n))
+	max_divisor = int(sqrt(n))
 	divisors = list(range(2,max_divisor+1))
 	
     #Check if the minimum number in the list is a divisor of n, and if so, return "not prime"
